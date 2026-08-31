@@ -1,0 +1,6 @@
+{
+  "name": "iMtec POS - Sistema de Ventas y Cobranzas",
+  "description": "Sistema de punto de venta (POS), facturación multimoneda (USD y Bs BCV), cuentas por cobrar, cuentas por pagar a proveedores y control de inventario sincronizado.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
