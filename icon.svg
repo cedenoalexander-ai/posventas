@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+
+  <!-- Inner subtle border -->
+  <rect x="12" y="12" width="488" height="488" rx="100" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="4" />
+
+  <!-- POS Terminal Body -->
+  <g filter="url(#dropShadow)">
+    <!-- Terminal base -->
+    <path d="M 120 180 L 392 180 L 416 410 C 416 424 404 436 390 436 L 122 436 C 108 436 96 424 96 410 Z" fill="#ffffff" />
+    
+    <!-- Screen area -->
+    <rect x="126" y="196" width="260" height="130" rx="16" fill="#0f172a" />
+    
+    <!-- Screen content -->
+    <rect x="144" y="214" width="70" height="12" rx="4" fill="#38bdf8" />
+    <rect x="144" y="234" width="140" height="10" rx="3" fill="#64748b" />
+    <text x="368" y="246" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="900" font-size="22" fill="#34d399">$120.00</text>
+    <text x="368" y="272" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="14" fill="#fcd34d">Bs 7,850</text>
+
+    <line x1="144" y1="292" x2="368" y2="292" stroke="#334155" stroke-width="2" stroke-dasharray="4 4" />
+    <circle cx="156" cy="308" r="6" fill="#10b981" />
+    <text x="170" y="312" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="11" fill="#94a3b8">iMtec POS Pro</text>
+
+    <!-- Keypad / Card Slot section -->
+    <rect x="126" y="340" width="160" height="74" rx="12" fill="#f1f5f9" />
+    <!-- 9 buttons grid -->
+    <circle cx="152" cy="358" r="8" fill="#cbd5e1" />
+    <circle cx="186" cy="358" r="8" fill="#cbd5e1" />
+    <circle cx="220" cy="358" r="8" fill="#cbd5e1" />
+    <circle cx="254" cy="358" r="8" fill="#3b82f6" />
+
+    <circle cx="152" cy="382" r="8" fill="#cbd5e1" />
+    <circle cx="186" cy="382" r="8" fill="#cbd5e1" />
+    <circle cx="220" cy="382" r="8" fill="#cbd5e1" />
+    <circle cx="254" cy="382" r="8" fill="#10b981" />
+
+    <circle cx="152" cy="404" r="6" fill="#94a3b8" />
+    <circle cx="186" cy="404" r="6" fill="#94a3b8" />
+    <circle cx="220" cy="404" r="6" fill="#94a3b8" />
+
+    <!-- Credit card chip / slot -->
+    <rect x="306" y="340" width="80" height="74" rx="12" fill="#0284c7" />
+    <rect x="320" y="356" width="52" height="34" rx="6" fill="url(#accentGrad)" />
+    <rect x="326" y="366" width="16" height="12" rx="2" fill="#b45309" opacity="0.6" />
+    <circle cx="356" cy="373" r="6" fill="#ef4444" opacity="0.8" />
+    <circle cx="362" cy="373" r="6" fill="#f59e0b" opacity="0.8" />
+
+    <!-- Paper Receipt coming out top -->
+    <path d="M 180 180 L 180 96 L 202 108 L 224 96 L 246 108 L 268 96 L 290 108 L 312 96 L 332 108 L 332 180 Z" fill="#ffffff" />
+    <line x1="200" y1="126" x2="312" y2="126" stroke="#059669" stroke-width="4" stroke-linecap="round" />
+    <line x1="200" y1="140" x2="280" y2="140" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+    <line x1="200" y1="154" x2="300" y2="154" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+    <line x1="200" y1="168" x2="260" y2="168" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>

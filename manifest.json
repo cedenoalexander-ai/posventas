@@ -1,0 +1,62 @@
+{
+  "id": "/",
+  "name": "iMtec POS Pro - Sistema de Ventas y Cobranzas",
+  "short_name": "iMtec POS",
+  "description": "Sistema de punto de venta (POS), facturación multimoneda (USD y Bs BCV), cuentas por cobrar, cuentas por pagar a proveedores y control de inventario sincronizado.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#0f766e",
+  "categories": ["business", "finance", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Punto de Venta",
+      "short_name": "POS",
+      "description": "Abrir caja y facturación rápida",
+      "url": "/?tab=pos",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Inventario",
+      "short_name": "Stock",
+      "description": "Consultar y actualizar inventario",
+      "url": "/?tab=inventory",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Cuentas por Cobrar",
+      "short_name": "Cobranzas",
+      "description": "Gestión de clientes y deudas pendientes",
+      "url": "/?tab=receivables",
+      "icons": [{ "src": "/pwa-192x192.png", "sizes": "192x192" }]
+    }
+  ]
+}
